@@ -1,7 +1,8 @@
 body {
   padding: 1em;
   background-color: #e3f1f1;
-  font-family: system;
+  font-family: LinLibertine, system-ui;
+  font-size: 1.1em;
 }
 
 .main {
@@ -13,4 +14,50 @@ body {
 
 .main p:first-of-type {
   font-size: 1.5em;
+}
+
+.main p {
+  max-width: 60vw;
+  margin: 1em auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+@font-face {
+    font-family: "LinLibertine";
+    src: url("./fonts/LinLibertine_R.ttf");
+}
+
+#intro {
+
+}
+
+.section {
+    margin-bottom: 5em;
+
+}
+
+#skills .flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#skills .flexbox div {
+  margin: 1em 3em;
+
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+
+#skills ul li {
+  margin: 0.3em 0;
 }
