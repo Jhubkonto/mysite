@@ -1,0 +1,16 @@
+body {
+  padding: 1em;
+  background-color: #e3f1f1;
+  font-family: system;
+}
+
+.main {
+  margin: auto;
+  text-align: center;
+  line-height: 1.25;
+
+}
+
+.main p:first-of-type {
+  font-size: 1.5em;
+}
