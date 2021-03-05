@@ -1,28 +1,41 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   padding: 1em;
   background-color: #e3f1f1;
   font-family: LinLibertine, system-ui;
-  font-size: 1.1em;
+  padding: 3rem;
+  box-sizing: border-box;
 }
 
 .main {
   margin: auto;
   text-align: center;
   line-height: 1.25;
-
+  font-size: 2.4rem;
 }
 
 .main p:first-of-type {
-  font-size: 1.5em;
+  font-size: 2.4rem;
 }
 
 .main p {
   max-width: 60vw;
-  margin: 1em auto;
+  margin: 1.6rem auto;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4.8rem;
 }
 
 @font-face {
@@ -35,7 +48,7 @@ h1 {
 }
 
 .section {
-    margin-bottom: 5em;
+    margin-bottom: 9rem;
 
 }
 
@@ -47,7 +60,7 @@ h1 {
 }
 
 #skills .flexbox div {
-  margin: 1em 3em;
+  margin: 1.6rem 4.8rem;
 
 }
 
@@ -59,5 +72,5 @@ h1 {
 
 
 #skills ul li {
-  margin: 0.3em 0;
+  margin: 1rem 0;
 }
