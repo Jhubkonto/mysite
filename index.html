@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML Page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      title="Cool stylesheet"
+      href="style.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My HTML Page</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <div class="main">
-    <div id="intro" class="section">
-      <h1>I'm Jules 👋</h1>
-      <p>I'm an aspiring web developer currently living in Germany, looking to get my foot in the door in the world of web design & development</p>
-      <p>My background is in Information Technology and I've always had a curiosity and a knack for building and repairing computers and smartphones.</p>
-      <p>The time has come for me to unleash my creative side!</p>
+  <body>
+    <div id="intro" class="flexbox flexbox__direction--column">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">G'day, I'm Jules.</span>
+          <span class="heading-primary--sub">Aspiring web developer.</span>
+        </h1>
+      </div>
+      <div>
+        <div class="header__avatar">
+          <img src="images/AvatarMaker.resized.png" alt="" />
+        </div>
+      </div>
     </div>
 
-    <div id="skills" class="section">
-      <div class="flexbox">
+    <div id="story" class="backdrop backdrop__text">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">My story...</span>
+        </h1>
+      </div>
+      <h1 class="heading-primary">
+        <span class="heading-primary--sub">
+          In 2016, I left my home in Melbourne to embark on a journey and
+          landed myself in Freiburg, Germany.
+        </span>
+        <span class="heading-primary--sub story-text">
+          It's now 2021 and I'm still here.
+        </span>
+      </h1>
+    </div>
+
+    <div id="skills" class="flexbox flexbox__direction--column">
+      <div class="header__avatar">
+        <img src="images/data-management.png" alt="" />
+      </div>
+      <div class="flexbox flexbox__direction--row">
         <div>
           <h2>Technologies</h2>
           <ul>
@@ -31,7 +60,6 @@
             <li>Mongoose</li>
           </ul>
         </div>
-
         <div>
           <h2>Desktop</h2>
           <ul>
@@ -44,16 +72,63 @@
       </div>
     </div>
 
-    <div id="projects" class="section">
-      <p>I'm looking to expore ways to develop the web in more intuitive and creative ways</p>
-
-      <h2>Projects:</h2>
-      <p>speakgermanfluently.com</p>
-
+    <div id="drive" class=" backdrop backdrop__text">
+       <div class="header__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main">What drives me...</span>
+        </h1>
+      </div>
+        <h1 class="heading-primary">
+          <span class="heading-primary--sub">
+            Combining the problem solving skills I've amassed in the field of IT-support
+            with the creative thinking necessary for web development is my fuel!</span>
+        </h1>
     </div>
 
-  </div>
+    <div id="training" class="flexbox flexbox__direction--column">
+      <div class="header__avatar">
+        <img src="images/briefing.png" alt="" />
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <a href="https://speakgermanfluently.com/">Speakgermanfluently.com</a>
+          </li>
+          <li>
+            <a href="https://recipe-bloc-e4396.web.app/">Recipe Bloc - Full MERN stack app</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Training</h2>
+        <ul>
+          <li>
+            <h3>Udemy.com</h3>
+            <ul>
+              <li>
+                <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">
+                  The Complete 2021 Web Development Bootcamp
+                </a>
+              </li>
+              <li>
+                <a href="https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/">
+                  React, NodeJS, Express & MongoDB - The MERN Fullstack Guide
+                </a>                 
+              </li>
+              <li>
+                <a href="https://www.udemy.com/course/advanced-css-and-sass/learn/">
+                  Advanced CSS and Sass: Flexbox, Grid, Animations and More
+                </a>
+                <span> - ongoing</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </body>
 
-</body>
-
+  
 </html>

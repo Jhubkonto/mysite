@@ -1,3 +1,5 @@
+/****************** GLOBAL CSS *******************/
+
 *,
 *::after,
 *::before {
@@ -11,31 +13,12 @@ html {
 }
 
 body {
-  padding: 1em;
-  background-color: #e3f1f1;
+  background-color: #ecf0f1;
   font-family: LinLibertine, system-ui;
-  padding: 3rem;
+  color: rgb(148, 148, 148);
   box-sizing: border-box;
-}
-
-.main {
-  margin: auto;
-  text-align: center;
-  line-height: 1.25;
-  font-size: 2.4rem;
-}
-
-.main p:first-of-type {
-  font-size: 2.4rem;
-}
-
-.main p {
-  max-width: 60vw;
-  margin: 1.6rem auto;
-}
-
-h1 {
-  font-size: 4.8rem;
+  line-height: 1.50;
+  padding: 3rem;
 }
 
 @font-face {
@@ -43,34 +26,162 @@ h1 {
     src: url("./fonts/LinLibertine_R.ttf");
 }
 
+/****************** PAGE IDs *******************/
+
 #intro {
-
+  font-size: 2.4rem;
+  padding-left: 0;
 }
 
-.section {
-    margin-bottom: 9rem;
-
-}
-
-#skills .flexbox {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-#skills .flexbox div {
-  margin: 1.6rem 4.8rem;
-
+#skills {
+  padding: 10rem 0 10rem 0;
+  font-size: 2rem;
 }
 
 #skills ul {
   list-style-type: none;
   padding: 0;
-
 }
-
 
 #skills ul li {
   margin: 1rem 0;
+}
+
+#drive {
+ 
+}
+
+#training {
+  padding: 10rem 0 10rem 0;
+  font-size: 2rem;
+}
+
+#training ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#training ul li {
+  margin: 1rem 0;
+}
+
+/****************** HEADINGS & TEXT *******************/
+
+.header__text-box {
+  text-align: center;
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  margin: auto;
+  max-width: 100rem;
+  text-align: center;
+  /* Fixes slight shakiness after animation terminates */
+  backface-visibility: hidden;
+}
+
+.heading-primary--main {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 1.10rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1.05rem;
+  animation: moveInRight 1s ease-out;
+}
+
+.header__avatar {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+/* @media screen and ( max-width: 768px ) {
+  .header__avatar {
+    width: 100px;
+    height: auto !important;
+  }
+} */
+
+/****************** ANIMATIONS *******************/
+
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  80% {
+      transform: translate(1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(10rem);
+  }
+
+  80% {
+      transform: translate(-1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+/****************** COMPONENTS *******************/
+
+/* .backdrop {
+  height: 100vh;
+  padding: 16rem 2rem 0 2rem;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
+} */
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: flex-start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flexbox__direction--column {
+  flex-direction: column;
+}
+
+.flexbox__direction--row {
+  flex-direction: row;
+}
+
+.flexbox div {
+  padding: 2.6rem 2.6rem 2.6rem;
 }
