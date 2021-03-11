@@ -21,8 +21,20 @@ body {
   padding: 3rem;
 }
 
+footer {
+  font-size: 2rem;
+}
+
 h2 {
   color:rgb(112, 112, 112);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 3px solid;
 }
 
 @font-face {
@@ -62,7 +74,7 @@ h2 {
   font-size: 2rem;
 }
 
-#training p, span {
+#training p, span, a {
   font-size: 2.2rem;
   font-weight: 600;
 }
@@ -106,7 +118,7 @@ h2 {
   font-size: 2.6rem;
   font-weight: 600;
   font-style: italic;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.3rem;
   animation: moveInRight 1s ease-out;
 }
 
