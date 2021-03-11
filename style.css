@@ -21,6 +21,10 @@ body {
   padding: 3rem;
 }
 
+h2 {
+  color:rgb(112, 112, 112);
+}
+
 @font-face {
     font-family: "LinLibertine";
     src: url("./fonts/LinLibertine_R.ttf");
@@ -45,6 +49,8 @@ body {
 
 #skills ul li {
   margin: 1rem 0;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 #drive {
@@ -54,6 +60,11 @@ body {
 #training {
   padding: 10rem 0 10rem 0;
   font-size: 2rem;
+}
+
+#training p, span {
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 #training ul {
@@ -83,6 +94,7 @@ body {
   text-transform: uppercase;
   font-size: 4.4rem;
   font-weight: 600;
+  color:rgb(112, 112, 112);
   letter-spacing: 1.10rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -157,14 +169,6 @@ body {
 }
 
 /****************** COMPONENTS *******************/
-
-/* .backdrop {
-  height: 100vh;
-  padding: 16rem 2rem 0 2rem;
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
-} */
 
 .flexbox {
   display: flex;
